@@ -13,9 +13,10 @@ export function evaluador(input, setCheck) {
           balance = input[i] === "(" ? balance + 1 : balance - 1;
         else if (
           input[i] === ")" &&
-          (input[i - 2] === "(" || input[i - 2] !== undefined) &&
-          (input[i + 1] !== ")" || input[i + 1] !== undefined)
+          (input[i - 2] === "(" || typeof input[i - 2] === undefined) &&
+          (input[i + 1] !== ")" || input[i + 1] === undefined)
         )
+          // si tiene dos puntos y parentesis de cierre (emoji feliz) evaluamos que no haya otro parentesis cerca que "cierre" ese parentesis, en caso de haber los vamos a sumar o restar en el balance
           balance = input[i] === "(" ? balance + 1 : balance - 1;
         else if (input[i] !== "(" && input[i - 1] !== ":") {
           // si es parentesis de apertura (emoji triste) hacemos la misma evaluacion
