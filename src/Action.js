@@ -12,9 +12,8 @@ export function evaluador(input, setCheck) {
           //Si no tiene dos puntos antes o despues (no es emoji) suma o resta al balance
           balance = input[i] === "(" ? balance + 1 : balance - 1;
         else if (
-          // si tiene dos puntos y parentesis de cierre (emoji feliz) evaluamos que no haya otro parentesis cerca que "cierre" ese parentesis, en caso de haber los vamos a sumar o restar en el balance
           input[i] === ")" &&
-          (input[i - 2] === "(" || input[i - 2] === undefined) &&
+          (input[i - 2] === "(" || input[i - 2] !== undefined) &&
           (input[i + 1] !== ")" || input[i + 1] !== undefined)
         )
           balance = input[i] === "(" ? balance + 1 : balance - 1;

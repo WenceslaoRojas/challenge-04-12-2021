@@ -22,6 +22,7 @@ function App() {
             placeholder='Ingresa una frase...'
             type='text'
             name='prueba'
+            autoComplete='off'
           />
 
           <button className={estilosApp.btn} type='submit'>
