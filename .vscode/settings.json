@@ -1,0 +1,14 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#49125D",
+    "titleBar.activeBackground": "#671A82",
+    "titleBar.activeForeground": "#FDFAFE"
+  },
+  "cSpell.ignoreWords": [
+    "desbalanceado",
+    "desbalanceados",
+    "emoticones",
+    "emoticón"
+  ],
+  "cSpell.language": "en,es"
+}
