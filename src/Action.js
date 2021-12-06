@@ -10,7 +10,6 @@ export function evaluador(input, setCheck) {
     //Bucle para evaluar todos los caracteres
     for (let i = 0; i < input.length; i++) {
       // debugger;
-      let caracter = input[i];
       // si el caracter evaluado es parentesis entra en la condicion de evaluacion
       if (input[i] === "(" || input[i] === ")") {
         //Buscamos el primer y el ultimo parentesis de la cadena
